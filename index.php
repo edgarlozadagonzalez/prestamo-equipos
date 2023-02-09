@@ -4,11 +4,11 @@ $ruta = $componentes_url['path'];
 $partes_ruta = explode("/", $ruta);
 $partes_ruta = array_filter($partes_ruta);
 $partes_ruta = array_slice(($partes_ruta),0);
-
+$ruta_elegida = 'vistas/404.php';
 if($partes_ruta[0]==''){
     if(count($partes_ruta)==0){
     $ruta_elegida = 'vistas/login.php';
-}}else if(count($partes_ruta)==0){
+}}else if(count($partes_ruta)==1){
         switch($partes_ruta[0]){
             case 'home':
                 $ruta_elegida ='vistas/home.php';
