@@ -1,0 +1,90 @@
+body{
+    background-image: url('../img/fondobody.png');
+}
+.jumbotron{
+    background-color: #bf0600;
+    color: white;
+}
+.panel-heading{
+    background-color: #bf0600 !important;
+    color: white !important;
+}
+.panel-body{
+    color: #2b2b2b !important;
+}
+.navbar{
+    background-color: #2b2b2b;
+
+}
+.navbar-brand:link, .navbar-brand:visited{
+    color: #bf0600 !important;
+}
+.navbar-brand:hover, .navbar-brand:active{
+    color: white !important;
+}
+#navbar li a:link, #navbar li a:visited{
+    color: white !important
+}
+#navbar li a:hover, #navbar li a:active{
+    color: #bf0600 !important
+}
+
+.dropdown-menu{
+    background-color: #2b2b2b;
+}
+
+.open > a{
+    background-color: #2b2b2b !important;
+}
+
+.sidebar{
+    background-color: white;
+}
+#lateral li a {
+    color: #bf0600 ;
+}
+.nav-sidebar{
+    color: #bf0600 
+}
+.sidebar, .gg-elemento{
+    padding-top:1em;
+    padding-bottom: 1em;
+}
+.gg-elemento:hover{
+    background-color: #2b2b2b !important;
+    color: #bf0600;
+}
+.gg-elemento{
+    color: white;
+}
+#gg-salas{
+background-color: #ff0800;
+}
+#gg-equipos{
+background-color: #ce0700;
+}
+#gg-prestamos{
+    background-color:  #aa0600;
+}
+
+.parte-gestor-gen{
+    background-color: #aa0600;
+    color: white;
+}
+.table-condensed>tbody>tr:nth-child(odd)>td,
+.table-condensed>tbody>tr:nth-child(odd)>th{
+    background-color:#ce0700;
+}
+.table-condensed>tbody>tr>td{
+    border:none;
+}
+tbody:before{
+    content:"-";
+    display: block;
+    line-height: 1em;
+    color: transparent;
+}
+
+.table>thead>tr>th{
+    border:none !important;
+}
