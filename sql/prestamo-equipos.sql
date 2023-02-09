@@ -133,9 +133,9 @@ WHERE NOT EXISTS(SELECT cod_equ FROM sindevolver as sn WHERE eq.cod_equ=sn.cod_e
 AND eq.estado ='0';
 
 
-\COPY ROLES(nombre_rol) FROM '/home/beelz/Escritorio/Base de datos/Proyecto/datos/roles.csv' WITH(FORMAT csv,HEADER,DELIMITER ',');
-\COPY FACULTADES(nombre_fac) FROM '/home/beelz/Escritorio/Base de datos/Proyecto/datos/facultades.csv' WITH(FORMAT csv,HEADER,DELIMITER ',');
-\COPY EDIFICIOS(nombre_edif,num_pisos,sede) FROM '/home/beelz/Escritorio/Base de datos/Proyecto/datos/edificios.csv' WITH(FORMAT csv,HEADER,DELIMITER ',');
-\COPY SALAS(nombre_sal,num_piso,plataforma,cod_edif) FROM '/home/beelz/Escritorio/Base de datos/Proyecto/datos/salas.csv' WITH(FORMAT csv,HEADER,DELIMITER ',');
-\COPY DISPOSITIVOS(nombre_disp) FROM '/home/beelz/Escritorio/Base de datos/Proyecto/datos/dispositivos.csv' WITH(FORMAT csv,HEADER,DELIMITER ',');
-\COPY EQUIPOS(cod_equ,marca,valor,estado,descripcion,cod_sal,cod_disp) FROM '/home/beelz/Escritorio/Base de datos/Proyecto/datos/equipos.csv' WITH(FORMAT csv,HEADER,DELIMITER ',');
+\COPY ROLES(nombre_rol) FROM 'D:\Ingenieria De Sistemas\Base de datos\Proyecto\Codigo\prestamo-equipos\sql\Datos\roles.csv' WITH(FORMAT csv,HEADER,DELIMITER ',');
+\COPY FACULTADES(nombre_fac) FROM 'D:\Ingenieria De Sistemas\Base de datos\Proyecto\Codigo\prestamo-equipos\sql\Datos\facultades.csv' WITH(FORMAT csv,HEADER,DELIMITER ',');
+\COPY EDIFICIOS(nombre_edif,num_pisos,sede) FROM 'D:\Ingenieria De Sistemas\Base de datos\Proyecto\Codigo\prestamo-equipos\sql\Datos\edificios.csv' WITH(FORMAT csv,HEADER,DELIMITER ',');
+\COPY SALAS(nombre_sal,num_piso,plataforma,cod_edif) FROM 'D:\Ingenieria De Sistemas\Base de datos\Proyecto\Codigo\prestamo-equipos\sql\Datos\salas.csv' WITH(FORMAT csv,HEADER,DELIMITER ',');
+\COPY DISPOSITIVOS(nombre_disp) FROM 'D:\Ingenieria De Sistemas\Base de datos\Proyecto\Codigo\prestamo-equipos\sql\Datos\dispositivos.csv' WITH(FORMAT csv,HEADER,DELIMITER ',');
+\COPY EQUIPOS(cod_equ,marca,valor,estado,descripcion,cod_sal,cod_disp) FROM 'D:\Ingenieria De Sistemas\Base de datos\Proyecto\Codigo\prestamo-equipos\sql\Datos\equipos.csv' WITH(FORMAT csv,HEADER,DELIMITER ',');
