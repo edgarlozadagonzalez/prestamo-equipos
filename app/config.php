@@ -1,10 +1,10 @@
 <?php 
 
 // INFORMACIÓN DE LA BASE DE DATOS EN POSTGRESQL
-define('NOMBRE_SERVIDOR', 'ec2-18-235-45-217.compute-1.amazonaws.com');
-define('NOMBRE_USUARIO', 'dtvsvcynmsqwjc');
-define('PASSWORD', 'f712650f4fbdc6586dc3b5458381142440405d9d207cf3feb4e989f33377c2aa');
-define('BASE_DE_DATOS', 'd5deb42s7lc059');
+define('NOMBRE_SERVIDOR', 'containers-us-west-199.railway.app');
+define('NOMBRE_USUARIO', 'postgres');
+define('PASSWORD', 'X8dcgivVa01sjaiw4f95');
+define('BASE_DE_DATOS', 'railway');
 
 //NUMERO IDENTIFICADOR DEL ADMINISTRADOR
 $admin=1;
