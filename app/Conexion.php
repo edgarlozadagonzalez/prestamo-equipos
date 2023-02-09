@@ -9,7 +9,7 @@ class Conexion{
 			try{
 				include_once 'config.php';
 
-				self::$conexion = new PDO('pgsql:host='.NOMBRE_SERVIDOR.'; dbname='.BASE_DE_DATOS, NOMBRE_USUARIO, PASSWORD);
+				self::$conexion = new PDO('pgsql:host='.NOMBRE_SERVIDOR.'; port='.PORT.'; dbname='.BASE_DE_DATOS, NOMBRE_USUARIO, PASSWORD);
 				self::$conexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 				self::$conexion->exec("SET NAMES 'UTF8'");
 			}
