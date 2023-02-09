@@ -1,7 +1,7 @@
 <?php 
 
 // INFORMACIÓN DE LA BASE DE DATOS EN POSTGRESQL
-define('NOMBRE_SERVIDOR', 'containers-us-west-199.railway.app');
+define('NOMBRE_SERVIDOR', 'containers-us-west-199.railway.app:7864');
 define('NOMBRE_USUARIO', 'postgres');
 define('PASSWORD', 'X8dcgivVa01sjaiw4f95');
 define('BASE_DE_DATOS', 'railway');
