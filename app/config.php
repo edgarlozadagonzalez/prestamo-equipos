@@ -10,7 +10,7 @@ define('BASE_DE_DATOS', 'railway');
 $admin=1;
 
 //rutas de la web
-define("SERVIDOR","https://prestamo-equipos.herokuapp.com");
+define("SERVIDOR","https://prestamo-equipos-production.up.railway.app");
 define("RUTA_LOGIN",SERVIDOR."/login");
 define("RUTA_REGISTRO",SERVIDOR."/registro");
 define("RUTA_REGISTRO_CORRECTO",SERVIDOR."/registroOK");
