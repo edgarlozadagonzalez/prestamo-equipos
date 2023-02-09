@@ -7,8 +7,8 @@ $partes_ruta = array_slice(($partes_ruta),0);
 $ruta_elegida = 'vistas/404.php';
 if($partes_ruta[0]==''){
     if(count($partes_ruta)==0){
-    $ruta_elegida = 'vistas/registro.php';
-}}else if(count($partes_ruta)==1){
+    $ruta_elegida = 'vistas/login.php';
+}}else if(count($partes_ruta)==0){
         switch($partes_ruta[0]){
             case 'home':
                 $ruta_elegida ='vistas/home.php';
