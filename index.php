@@ -106,3 +106,4 @@ if (count($partes_ruta) == 0) {
     }
 }
 include_once $ruta_elegida;
+?>
