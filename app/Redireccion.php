@@ -7,7 +7,7 @@ Class Redireccion{
     }
     public static function PaginaLogica()
     {   include_once 'config.php';
-        include_once 'app/ControlSesion.php';
+        include_once 'ControlSesion.php';
         if(ControlSesion::sesionIniciada()){
             if ($_SESSION['cod_rol']==$admin){
              Redireccion::redirigir(RUTA_ADMIN);
