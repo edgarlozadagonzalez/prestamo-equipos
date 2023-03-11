@@ -4,15 +4,13 @@ $ruta = $componentes_url['path'];
 $partes_ruta = explode("/", $ruta);
 $partes_ruta = array_filter($partes_ruta);
 $partes_ruta = array_slice(($partes_ruta), 0);
+$ruta_elegida = 'vistas/404.php';
+echo $componentes_url . PHP_EOL;
+echo $ruta . PHP_EOL;
+echo implode(', ', $partes_ruta) . PHP_EOL;
 if (count($partes_ruta) == 0) {
     $ruta_elegida = 'vistas/login.php';
-    echo $ruta_elegida;
-    $cantidad = count($partes_ruta);
-    echo $cantidad;
-    print_r($partes_ruta); 
 } else if (count($partes_ruta) > 0) {
-    echo $ruta_elegida;
-    print_r($partes_ruta);
     switch ($partes_ruta[0]) {
         case 'home':
             $ruta_elegida = 'vistas/home.php';
@@ -100,9 +98,3 @@ if (count($partes_ruta) == 0) {
     }
 }
 include_once $ruta_elegida;
-?>
-<script>
-    console.log('<?php echo $ruta_elegida;?>');
-    console.log('<?php echo $cantidad;?>');
-    console.log('<?php echo $partes_ruta;?>');
-</script>
