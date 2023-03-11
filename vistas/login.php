@@ -1,5 +1,5 @@
 <?php
-include_once 'app/config.php';
+include_once '../app/config.php';
 include_once 'app/Conexion.php';
 include_once 'app/Entidades/Persona.php';
 include_once 'app/Repositorios/RepositorioPersona.php';
