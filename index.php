@@ -2,12 +2,8 @@
 $componentes_url = parse_url($_SERVER["REQUEST_URI"]);
 $ruta = $componentes_url['path'];
 $partes_ruta = explode("/", $ruta);
-$partes_ruta = array_filter($partes_ruta);
-$partes_ruta = array_slice(($partes_ruta), 0);
+$partes_ruta = array_slice($partes_ruta, 0);
 $ruta_elegida = 'vistas/404.php';
-echo $componentes_url . PHP_EOL;
-echo $ruta . PHP_EOL;
-echo implode(', ', $partes_ruta) . PHP_EOL;
 ?>
 <script>
 const componentes_url = JSON.parse('<?php echo json_encode($componentes_url); ?>');
