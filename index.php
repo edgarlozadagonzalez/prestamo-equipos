@@ -7,6 +7,8 @@ $partes_ruta = array_slice(($partes_ruta), 0);
 if (count($partes_ruta) == 0) {
     $ruta_elegida = 'vistas/login.php';
     echo $ruta_elegida;
+    $cantidad = count($partes_ruta);
+    echo $cantidad;
     print_r($partes_ruta);
 } else if (count($partes_ruta) > 1) {
     echo $ruta_elegida;
