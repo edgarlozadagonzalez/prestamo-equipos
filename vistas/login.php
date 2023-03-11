@@ -1,11 +1,11 @@
 <?php
 include_once '../app/config.php';
-include_once 'app/Conexion.php';
-include_once 'app/Entidades/Persona.php';
-include_once 'app/Repositorios/RepositorioPersona.php';
-include_once 'app/Validadores/ValidadorLogin.php';
-include_once 'app/ControlSesion.php';
-include_once 'app/Redireccion.php';
+include_once '../app/Conexion.php';
+include_once '../app/Entidades/Persona.php';
+include_once '../app/Repositorios/RepositorioPersona.php';
+include_once '../app/Validadores/ValidadorLogin.php';
+include_once '../app/ControlSesion.php';
+include_once '../app/Redireccion.php';
 
 Redireccion::PaginaLogica();
 
@@ -24,8 +24,8 @@ if (isset($_POST['login'])) {
 	}
 }
 $titulo = 'Iniciar sesión';
-include_once 'plantillas/documento-declaracion.php';
-include_once 'plantillas/navbar.php';
+include_once '../plantillas/documento-declaracion.php';
+include_once '../plantillas/navbar.php';
 ?>
 <div class="container">
 	<div class="row">
@@ -65,5 +65,5 @@ include_once 'plantillas/navbar.php';
 	</div>
 </div>
 <?php
-include_once 'plantillas/documento-cierre.php';
+include_once '../plantillas/documento-cierre.php';
 ?>
