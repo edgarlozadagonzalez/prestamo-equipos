@@ -7,7 +7,7 @@ include_once 'app/Validadores/ValidadorLogin.php';
 include_once 'app/ControlSesion.php';
 include_once 'app/Redireccion.php';
 
-Redireccion::PaginaLogica();
+//Redireccion::PaginaLogica();
 
 if (isset($_POST['login'])) {
 	Conexion::abrirConexion();
