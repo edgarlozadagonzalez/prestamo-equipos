@@ -2,6 +2,7 @@
 $componentes_url = parse_url($_SERVER["REQUEST_URI"]);
 $ruta = $componentes_url['path'];
 $partes_ruta = explode("/", $ruta);
+$partes_ruta = array_filter($partes_ruta);
 $partes_ruta = array_slice($partes_ruta, 0);
 $ruta_elegida = 'vistas/404.php';
 ?>
