@@ -1,9 +1,9 @@
 <?php
-include_once 'app/config.php';
-include_once 'app/Conexion.php';
-include_once 'app/Redireccion.php';
-include_once 'app/ControlSesion.php';
-include_once 'app/Repositorios/RepositorioEquipo.php';
+include_once '../app/config.php';
+include_once '../app/Conexion.php';
+include_once '../app/Redireccion.php';
+include_once '../app/ControlSesion.php';
+include_once '../app/Repositorios/RepositorioEquipo.php';
 
 if (!ControlSesion::sesionIniciada()) {
     Redireccion::redirigir(RUTA_LOGIN);
@@ -15,8 +15,8 @@ Conexion::abrirConexion();
 
 $titulo = 'Centro TiC';
 
-include_once 'plantillas/documento-declaracion.php';
-include_once 'plantillas/navbar.php';
+include_once '../plantillas/documento-declaracion.php';
+include_once '../plantillas/navbar.php';
 
 
 switch ($opcion_actual) {
@@ -38,6 +38,6 @@ switch ($opcion_actual) {
     
 }
 Conexion::cerrarConexion();
-include_once 'plantillas/documento-cierre.php';
+include_once '../plantillas/documento-cierre.php';
 ?>
 

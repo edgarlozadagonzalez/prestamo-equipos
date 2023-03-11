@@ -12,13 +12,13 @@ $admin=1;
 
 //rutas de la web
 define("SERVIDOR","https://prestamo-equipos-production.up.railway.app");
-define("RUTA_LOGIN",SERVIDOR."/login");
-define("RUTA_REGISTRO",SERVIDOR."/registro");
-define("RUTA_REGISTRO_CORRECTO",SERVIDOR."/registroOK");
-define("RUTA_LOGOUT",SERVIDOR."/logout");
-define("RUTA_HOME",SERVIDOR."/home");
-define("RUTA_SALAS",SERVIDOR."/salas");
-define("RUTA_ADMIN",SERVIDOR."/admin");
+define("RUTA_LOGIN",SERVIDOR."/vistas/login.php");
+define("RUTA_REGISTRO",SERVIDOR."/vistas/registro.php");
+define("RUTA_REGISTRO_CORRECTO",SERVIDOR."/vistas/registroOK.php");
+define("RUTA_LOGOUT",SERVIDOR."/vistas/logout.php");
+define("RUTA_HOME",SERVIDOR."/vistas/home.php");
+define("RUTA_SALAS",SERVIDOR."/vistas/salas.php");
+define("RUTA_ADMIN",SERVIDOR."/vistas/admin.php");
 define("RUTA_EQUIPOS",SERVIDOR."/equipos");
 define("RUTA_CONTACTO",SERVIDOR."/contacto");
 define("RUTA_GESTOR_SALAS",RUTA_ADMIN."/salas");

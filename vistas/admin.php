@@ -1,9 +1,9 @@
 <?php
-include_once 'app/config.php';
-include_once 'app/Conexion.php';
-include_once 'app/Repositorios/RepositorioSala.php';
-include_once 'app/Redireccion.php';
-include_once 'app/ControlSesion.php';
+include_once '../app/config.php';
+include_once '../app/Conexion.php';
+include_once '../app/Repositorios/RepositorioSala.php';
+include_once '../app/Redireccion.php';
+include_once '../app/ControlSesion.php';
 
 if(!ControlSesion::sesionIniciada()){
     Redireccion::redirigir(RUTA_LOGIN);
@@ -13,9 +13,9 @@ if(!ControlSesion::sesionIniciada()){
 
 $titulo = 'Admin TiC';
 
-include_once 'plantillas/documento-declaracion.php';
-include_once 'plantillas/navbar.php';
-include_once 'plantillas/panel-control-declaracion.php';
+include_once '../plantillas/documento-declaracion.php';
+include_once '../plantillas/navbar.php';
+include_once '../plantillas/panel-control-declaracion.php';
 
 Conexion::abrirConexion();
 switch ($gestor_actual) {
@@ -29,7 +29,7 @@ switch ($gestor_actual) {
         $cantidad_prestamos= RepositorioSala::Contar(Conexion::obtenerConexion(),"SELECT COUNT(*) as total FROM prestamos");
         $cantidad_sinentregar= RepositorioSala::Contar(Conexion::obtenerConexion(),"SELECT COUNT(*) as total FROM prestamos WHERE fecha_fin is null");
         $cantidad_entregado= RepositorioSala::Contar(Conexion::obtenerConexion(),"SELECT COUNT(*) as total FROM prestamos WHERE fecha_fin is not null");
-        include_once 'gestores/gestor-generico.php';
+        include_once '../gestores/gestor-generico.php';
     break;
     case 'roles':
         ?> 
@@ -88,7 +88,7 @@ switch ($gestor_actual) {
     break;
 }
 Conexion::cerrarConexion();
-include_once 'plantillas/panel-control-cierre.php';
-include_once 'plantillas/documento-cierre.php';
+include_once '../plantillas/panel-control-cierre.php';
+include_once '../plantillas/documento-cierre.php';
 ?>
 
