@@ -6,8 +6,9 @@ $partes_ruta = array_filter($partes_ruta);
 $partes_ruta = array_slice(($partes_ruta),0);
 //$ruta_elegida = 'vistas/404.php';
 if(count($partes_ruta)==0){
-    $ruta_elegida = 'vistas/registro.php';
+    $ruta_elegida = 'vistas/login.php';
     echo $ruta_elegida;
+    echo $partes_ruta;
 }else if(count($partes_ruta)==1){
     echo $ruta_elegida;
         switch($partes_ruta[0]){
