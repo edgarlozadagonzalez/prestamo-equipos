@@ -1,0 +1,11 @@
+web:
+  commands:
+    start: vendor/bin/heroku-php-nginx -C nginx_app.conf public/
+  nginx_app.conf: |
+    location / {
+        try_files $uri $uri/ /index.php?$query_string;
+    }
+    # Regla de reescritura de URL
+    if (!-e $request_filename) {
+        rewrite ^/(.*)$ /index.php?$1 last;
+    }
