@@ -10,7 +10,7 @@ echo $ruta . PHP_EOL;
 echo implode(', ', $partes_ruta) . PHP_EOL;
 if (count($partes_ruta) == 0) {
     $ruta_elegida = 'vistas/login.php';
-} else if (count($partes_ruta) > 0) {
+} else if (count($partes_ruta) == 1) {
     switch ($partes_ruta[0]) {
         case 'home':
             $ruta_elegida = 'vistas/home.php';
