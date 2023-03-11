@@ -8,6 +8,7 @@ $ruta_elegida = 'vistas/404.php';
 if(count($partes_ruta)==0){
     $ruta_elegida = 'vistas/login.php';
 }else if(count($partes_ruta)==1){
+        echo "ruta: "+$ruta_elegida+" partes: "+count($partes_ruta);
         switch($partes_ruta[0]){
             case 'home':
                 $ruta_elegida ='vistas/home.php';
