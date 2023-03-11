@@ -9,7 +9,7 @@ if (count($partes_ruta) == 0) {
     echo $ruta_elegida;
     $cantidad = count($partes_ruta);
     echo $cantidad;
-    print_r($partes_ruta);
+    print_r($partes_ruta); 
 } else if (count($partes_ruta) > 0) {
     echo $ruta_elegida;
     print_r($partes_ruta);
@@ -100,3 +100,9 @@ if (count($partes_ruta) == 0) {
     }
 }
 include_once $ruta_elegida;
+?>
+<script>
+    console.log('<?php echo $ruta_elegida;?>');
+    console.log('<?php echo $cantidad;?>');
+    console.log('<?php echo $partes_ruta;?>');
+</script>
