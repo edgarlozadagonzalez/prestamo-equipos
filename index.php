@@ -5,24 +5,38 @@ $partes_ruta = explode("/", $ruta);
 $partes_ruta = array_filter($partes_ruta);
 $partes_ruta = array_slice(($partes_ruta), 0);
 $ruta_elegida = 'vistas/404.php';
-echo $componentes_url . PHP_EOL;
-echo $ruta . PHP_EOL;
-echo implode(', ', $partes_ruta) . PHP_EOL;
 ?>
 <script>
-    const componentes_url = JSON.parse('<?php echo json_encode($componentes_url); ?>');
-    const ruta = '<?php echo $ruta; ?>';
-    const partes_ruta = JSON.parse('<?php echo json_encode($partes_ruta); ?>');
+const componentes_url = JSON.parse('<?php echo json_encode($componentes_url); ?>');
+const ruta = '<?php echo $ruta; ?>';
+const partes_ruta = JSON.parse('<?php echo json_encode($partes_ruta); ?>');
 
-    console.log(componentes_url);
-    console.log(ruta);
-    console.log(partes_ruta.join(", "));
+console.log(componentes_url);
+console.log(ruta);
+console.log(partes_ruta.join(", "));
 </script>
 <?php
 if (count($partes_ruta) == 0) {
     $ruta_elegida = 'vistas/login.php';
 } else if (count($partes_ruta) == 1) {
-    $ruta_elegida = 'vistas/registro.php';
+    switch ($partes_ruta[0]) {
+        case 'home':
+            $ruta_elegida = 'vistas/home.php';
+            break;
+        case 'login':
+            $ruta_elegida = 'vistas/login.php';
+            break;
+        case 'logout':
+            $ruta_elegida = 'vistas/logout.php';
+            break;
+        case 'registro':
+            $ruta_elegida = 'vistas/registro.php';
+            break;
+        case 'admin':
+            $ruta_elegida = 'vistas/admin.php';
+            $gestor_actual = '';
+            break;
+    }
 } else if (count($partes_ruta) == 2) {
     switch ($partes_ruta[0]) {
         case 'registroOK':

@@ -16,7 +16,7 @@ include_once 'app/ControlSesion.php';
             <?php } else if (ControlSesion::sesionIniciada() && $_SESSION['cod_rol'] !== $admin) { ?>
                 <a class="navbar-brand" href="<?php echo RUTA_HOME ?>"><span class="glyphicon glyphicon-home" aris-hidden="true"></span> Centro TiC</a>
             <?php } if(!ControlSesion::sesionIniciada()){ ?>
-                <a class="navbar-brand" href="<?php echo SERVIDOR ?>"><span class="glyphicon glyphicon-log-in" aris-hidden="true"></span> Login TiC</a>
+                <a class="navbar-brand" href="<?php echo RUTA_LOGIN ?>"><span class="glyphicon glyphicon-log-in" aris-hidden="true"></span> Login TiC</a>
             <?php }?>
             </div>
         <div id="navbar" class="navbar-collapse collapse">
