@@ -19,7 +19,7 @@ console.log(partes_ruta.join(", "));
 if (count($partes_ruta) == 0) {
     $ruta_elegida = 'vistas/login.php';
 } else if (count($partes_ruta) == 1) {
-    switch ($partes_ruta[0]) {
+    switch ($partes_ruta[1]) {
         case 'home':
             $ruta_elegida = 'vistas/home.php';
             break;
