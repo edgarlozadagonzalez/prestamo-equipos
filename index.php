@@ -5,7 +5,7 @@ $partes_ruta = explode("/", $ruta);
 $partes_ruta = array_filter($partes_ruta);
 $partes_ruta = array_slice(($partes_ruta),0);
 print_r($partes_ruta);
-//$ruta_elegida = 'vistas/404.php';
+$ruta_elegida = 'vistas/login.php';
 if(count($partes_ruta)==0){
     $ruta_elegida = 'vistas/login.php';
     echo $ruta_elegida;
