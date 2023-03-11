@@ -29,10 +29,10 @@ services:
       # Configuración de la ubicación raíz de la aplicación
       location / {
           # Intenta cargar la URL solicitada, si no existe intenta cargar index.php
-          try_files $uri $uri/ /index.php?$query_string;
+          try_files $uri $uri/ ./index.php?$query_string;
       }
 
       # Regla de reescritura de URL
       if (!-e $request_filename) {
-          rewrite ^/(.*)$ /index.php?$1 last;
+          rewrite ^/(.*)$ ./index.php?$1 last;
       }
