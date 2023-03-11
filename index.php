@@ -13,7 +13,7 @@ if (count($partes_ruta) == 0) {
 } else if (count($partes_ruta) == 1) {
     echo $ruta_elegida;
     print_r($partes_ruta);
-    switch ($partes_ruta[0]) {
+    switch ($partes_ruta[1]) {
         case 'home':
             $ruta_elegida = 'vistas/home.php';
             break;
