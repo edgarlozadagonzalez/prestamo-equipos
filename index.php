@@ -29,7 +29,7 @@ if (count($partes_ruta) == 0) {
         case 'logout':
             $ruta_elegida = 'vistas/logout.php';
             break;
-        case 'registro':
+        case 'index.php':
             $ruta_elegida = 'vistas/registro.php';
             break;
         case 'admin':
