@@ -2,9 +2,6 @@
  class ControlSesion{
 
     public static function iniciarSesion($id_usuario,$nombre_usuario,$cod_rol){
-        if(session_id()==''){
-            session_start();
-        }
         $_SESSION['id_usuario']=$id_usuario;
         $_SESSION['nombre_usuario']=$nombre_usuario;
         $_SESSION['cod_rol']=$cod_rol;
