@@ -7,7 +7,7 @@ include_once 'app/Validadores/ValidadorLogin.php';
 include_once 'app/ControlSesion.php';
 include_once 'app/Redireccion.php';
 
-//Redireccion::PaginaLogica();
+Redireccion::PaginaLogica();
 
 if (isset($_POST['login'])) {
 	Conexion::abrirConexion();
@@ -22,7 +22,6 @@ if (isset($_POST['login'])) {
 			Redireccion::redirigir(RUTA_HOME);
 		}
 	}
-	
 }
 $titulo = 'Iniciar sesión';
 include_once 'plantillas/documento-declaracion.php';
