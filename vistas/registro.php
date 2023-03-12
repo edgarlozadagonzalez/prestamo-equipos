@@ -1,25 +1,25 @@
 <?php
-include_once '../app/config.php';
-include_once '../app/Conexion.php';
-include_once '../app/Entidades/Persona.php';
-include_once '../app/Entidades/Rol.php';
-include_once '../app/Entidades/Facultad.php';
-include_once '../app/Repositorios/RepositorioPersona.php';
-include_once '../app/Repositorios/RepositorioRol.php';
-include_once '../app/Repositorios/RepositorioFacultad.php';
-include_once '../app/Validadores/ValidadorRegistro.php';
-include_once '../app/Redireccion.php';	
+include_once 'app/config.php';
+include_once 'app/Conexion.php';
+include_once 'app/Entidades/Persona.php';
+include_once 'app/Entidades/Rol.php';
+include_once 'app/Entidades/Facultad.php';
+include_once 'app/Repositorios/RepositorioPersona.php';
+include_once 'app/Repositorios/RepositorioRol.php';
+include_once 'app/Repositorios/RepositorioFacultad.php';
+include_once 'app/Validadores/ValidadorRegistro.php';
+include_once 'app/Redireccion.php';	
 
 Redireccion::PaginaLogica();
 
 Conexion::abrirConexion();
 $conexion = Conexion::obtenerConexion();
-$sql = "SELECT * FROM roles WHERE cod_rol != '1'";
+$sql = "SELECT * FROM roles";
 $sentencia = $conexion -> prepare($sql);
 $sentencia ->execute();
 $roles = $sentencia->fetchAll();
 
-$sql2 = "SELECT * FROM facultades WHERE cod_fac != '1'";
+$sql2 = "SELECT * FROM facultades";
 $sentencia = $conexion -> prepare($sql2);
 $sentencia ->execute();
 $facultades = $sentencia->fetchAll();
@@ -46,8 +46,8 @@ if (isset($_POST['registro'])) {
 	Conexion::cerrarConexion();
 }
 $titulo = 'Registro';
-include_once '../plantillas/documento-declaracion.php';
-include_once '../plantillas/navbar.php';
+include_once 'plantillas/documento-declaracion.php';
+include_once 'plantillas/navbar.php';
 ?>
 <div class="container">
 	<div class="jumbotron">
@@ -90,9 +90,9 @@ include_once '../plantillas/navbar.php';
 					<form role="form" method="POST" action="<?php echo RUTA_REGISTRO ?>">
 						<?php
 							if(isset($_POST['registro'])){
-								include_once '../plantillas/registro_validado.php';
+								include_once 'plantillas/registro_validado.php';
 							}else{
-								include_once '../plantillas/registro_vacio.php';
+								include_once 'plantillas/registro_vacio.php';
 							}
 						?>
 					</form>
@@ -102,5 +102,5 @@ include_once '../plantillas/navbar.php';
 	</div>
 </div>
 <?php
-include_once '../plantillas/documento-cierre.php';
+include_once 'plantillas/documento-cierre.php';
 ?>

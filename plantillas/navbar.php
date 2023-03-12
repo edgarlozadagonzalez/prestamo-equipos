@@ -1,6 +1,6 @@
 <?php
-include_once '../app/config.php';
-include_once '../app/ControlSesion.php';
+include_once 'app/config.php';
+include_once 'app/ControlSesion.php';
 ?>
 <nav class="navbar navbar-default navbar-static-top">
     <div class="container">

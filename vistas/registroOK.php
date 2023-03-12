@@ -1,15 +1,15 @@
 <?php
-include_once '../app/config.php';
-include_once '../app/Conexion.php';
-include_once '../app/Repositorios/RepositorioPersona.php';
-include_once '../app/Redireccion.php';
+include_once 'app/config.php';
+include_once 'app/Conexion.php';
+include_once 'app/Repositorios/RepositorioPersona.php';
+include_once 'app/Redireccion.php';
 
 Redireccion::PaginaLogica();
 
 $titulo = 'Registro realizado';
 
-include_once '../plantillas/documento-declaracion.php';
-include_once '../plantillas/navbar.php';
+include_once 'plantillas/documento-declaracion.php';
+include_once 'plantillas/navbar.php';
 ?>
 
 <div class="container">
@@ -31,4 +31,4 @@ include_once '../plantillas/navbar.php';
     </div>
 </div>
 <?php
-include_once '../plantillas/documento-cierre.php';?>
+include_once 'plantillas/documento-cierre.php';?>
