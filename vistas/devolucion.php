@@ -15,7 +15,7 @@ $equipos = RepositorioEquipo::equiposSindevolver(Conexion::obtenerConexion(),$_S
         <div class="col-md-12">
             <div class="row parte-gestor-gen">
                 <div class="col-md-12">
-                    <h2>Prestamos activos</h2>
+                    <h2>Préstamos activos</h2>
                     <br>
                     <caption>
                         <a class="btn btn-primary" href="<?php echo RUTA_DEVOLUCION; ?>" role="button"><i class="fas fa-sync-alt"></i> Actualizar</a>
@@ -32,11 +32,11 @@ $equipos = RepositorioEquipo::equiposSindevolver(Conexion::obtenerConexion(),$_S
                         <table class="table table-condensed" id="tablaDevolucion">
                             <thead>
                                 <tr>
-                                    <th>Codigo de prestamo</th>
-                                    <th>Fecha de prestamo</th>
+                                    <th>Código de préstamo</th>
+                                    <th>Fecha de préstamo</th>
                                     <th>Serial</th>
                                     <th>Marca</th>
-                                    <th>Descripcion</th>
+                                    <th>Descripción</th>
                                     <th>Dispositivo</th>
                                     <th>Sala</th>
                                     <th>Piso</th>

@@ -13,7 +13,7 @@ $prestamos = RepositorioPrestamo::PrestamosActivos(Conexion::obtenerConexion());
 
 <div class="row parte-gestor-gen">
     <div class="col-md-12">
-        <h2>Prestamos activos</h2>
+        <h2>Préstamos activos</h2>
         <br>
         <caption>
             <a class="btn btn-primary" href="<?php echo RUTA_PRESTAMOS_ACTIVOS; ?>" role="button"><i class="fas fa-sync-alt"></i> Actualizar</a>
@@ -30,12 +30,12 @@ $prestamos = RepositorioPrestamo::PrestamosActivos(Conexion::obtenerConexion());
             <table class="table table-condensed" id="tablaPrestamosactivos">
                 <thead>
                     <tr>
-                        <th>Codigo de prestamo</th>
-                        <th>Fecha de prestamo</th>
-                        <th>Numero de indentificacion</th>
+                        <th>Código de préstamo</th>
+                        <th>Fecha de préstamo</th>
+                        <th>Número de identificación</th>
                         <th>Serial</th>
                         <th>Marca</th>
-                        <th>Descripcion</th>
+                        <th>Descripción</th>
                         <th>Dispositivo</th>
                         <th>Sala</th>
                         <th>Piso</th>
@@ -63,7 +63,7 @@ $prestamos = RepositorioPrestamo::PrestamosActivos(Conexion::obtenerConexion());
             </table>
         <?php
         } else {
-        ?> <h3 class="text-center">No hay prestamos activos</h3>
+        ?> <h3 class="text-center">No hay préstamos activos</h3>
             <br>
             <br>
             <br>
