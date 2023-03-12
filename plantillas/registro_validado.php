@@ -79,7 +79,7 @@
 <div class="form-group">
     <label>Rol <font color="red">(*)</font></label>
     <select class="form-control" id="cbx_roles" name="cod_rol">
-        <option value="0">Seleccionar opccion </option>
+        <option value="0">Seleccionar opción </option>
         <?php foreach($roles as $row) {?>
         <option value="<?php echo $row['cod_rol']; ?>"><?php echo $row['nombre_rol'];?>
         </option>
@@ -92,7 +92,7 @@
 <div class="form-group">
     <label>Facultad <font color="red">(*)</font></label>
     <select class="form-control" id="cbx_facultades" name="cod_fac">
-        <option value="0">Seleccionar opccion </option>
+        <option value="0">Seleccionar opción </option>
         <?php foreach($facultades as $row) {?>
         <option value="<?php echo $row['cod_fac']; ?>"><?php echo $row['nombre_fac'];;?>
         </option>
