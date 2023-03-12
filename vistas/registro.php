@@ -67,10 +67,10 @@ include_once 'plantillas/navbar.php';
 					<br>
 					<p class="text-justify">
 						Por favor rellene el siguiente formulario, con datos reales
-						ya que se requiere de estos para gestionar sus prestamos.
+						ya que se requiere de estos para gestionar sus préstamos.
 						Te recomendamos usar una contraseña que contenga letras minúsculas,
-						mayúsculas,números y símbolos.
-						Para ingresar su identificaion esta debe ser sin puntos ni comas ej:0123546789.
+						mayúsculas, números y símbolos.
+						La identificación no debe tener ni puntos ni comas ej:0123546789.
 					</p>
 					<br>
 					<a href="<?php echo RUTA_LOGIN?>">¿Ya tienes cuenta?</a>

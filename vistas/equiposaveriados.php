@@ -32,7 +32,7 @@ $equipos = RepositorioEquipo::Equiposaveriados(Conexion::obtenerConexion());
                         <th>Serial</th>
                         <th>Marca</th>
                         <th>Valor</th>
-                        <th>Descripcion</th>
+                        <th>Descripción</th>
                         <th>Sala</th>
                         <th>Dispositivo</th>
                     </tr>

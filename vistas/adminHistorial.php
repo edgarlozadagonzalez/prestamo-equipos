@@ -9,7 +9,7 @@ $historial = RepositorioPrestamo::obtenerHistorial(Conexion::obtenerConexion());
 ?>
 <div class="row parte-gestor-gen">
     <div class="col-md-12">
-        <h2>Historial de prestamos</h2>
+        <h2>Historial de préstamos</h2>
         <br>
         <caption>
             <a class="btn btn-primary" href="<?php echo RUTA_HISTORIAL; ?>" role="button"><i class="fas fa-sync-alt"></i> Actualizar</a>
@@ -26,15 +26,15 @@ $historial = RepositorioPrestamo::obtenerHistorial(Conexion::obtenerConexion());
                 if (count($historial) > 0) {
                 ?>
                     <tr>
-                        <th>Codigo de prestamo</th>
-                        <th>Fecha de prestamo</th>
-                        <th>Fecha de devolucion</th>
-                        <th>Numero de indentificacion</th>
+                        <th>Código de préstamo</th>
+                        <th>Fecha de préstamo</th>
+                        <th>Fecha de devolución</th>
+                        <th>Número de identificación</th>
                         <th>Email</th>
                         <th>Telefono</th>
                         <th>Serial</th>
                         <th>Marca</th>
-                        <th>Descripcion</th>
+                        <th>Descripción</th>
                         <th>Dispositivo</th>
                         <th>Sala</th>
                         <th>Piso</th>
@@ -65,7 +65,7 @@ $historial = RepositorioPrestamo::obtenerHistorial(Conexion::obtenerConexion());
         </table>
         <?php
         } else {?>
-        <h3 class="text-center">Sin prestamos registrados</h3>
+        <h3 class="text-center">Sin préstamos registrados</h3>
         <br>
         <br>
         <br>

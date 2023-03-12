@@ -34,7 +34,7 @@ $equipos = RepositorioEquipo::obtenerEquiposDisponibles(Conexion::obtenerConexio
                                 <tr>
                                     <th>Serial</th>
                                     <th>Marca</th>
-                                    <th>Descripcion</th>
+                                    <th>Descripción</th>
                                     <th>Dispositivo</th>
                                     <th>Sala</th>
                                     <th>Piso</th>

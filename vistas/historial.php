@@ -14,7 +14,7 @@ $prestamos = RepositorioPrestamo::obtenerPrestamosPersona(Conexion::obtenerConex
         <div class="col-md-12">
             <div class="row parte-gestor-gen">
                 <div class="col-md-12">
-                    <h2>Historial de prestamos realizados a <?php echo $_SESSION['nombre_usuario'] ?></h2>
+                    <h2>Historial de préstamos realizados a <?php echo $_SESSION['nombre_usuario'] ?></h2>
                     <br>
                     <caption>
                         <a class="btn btn-primary" href="<?php echo RUTA_HISTORIAL_PRESTAMO; ?>" role="button"><i class="fas fa-sync-alt"></i> Actualizar</a>
@@ -31,12 +31,12 @@ $prestamos = RepositorioPrestamo::obtenerPrestamosPersona(Conexion::obtenerConex
                             if (count($prestamos) > 0) {
                             ?>
                                 <tr>
-                                    <th>Codigo de prestamo</th>
-                                    <th>Fecha de prestamo</th>
-                                    <th>Fecha de devolucion</th>
+                                    <th>Código de préstamo</th>
+                                    <th>Fecha de préstamo</th>
+                                    <th>Fecha de devolución</th>
                                     <th>Serial</th>
                                     <th>Marca</th>
-                                    <th>Descripcion</th>
+                                    <th>Descripción</th>
                                     <th>Dispositivo</th>
                                     <th>Sala</th>
                                     <th>Piso</th>
@@ -64,7 +64,7 @@ $prestamos = RepositorioPrestamo::obtenerPrestamosPersona(Conexion::obtenerConex
                         </table>
                     <?php
                     } else {
-                        ?> <h3 class="text-center">Sin prestamos registrados</h3>
+                        ?> <h3 class="text-center">Sin préstamos registrados</h3>
                             <br>
                             <br>
                             <br>
